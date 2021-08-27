@@ -8,6 +8,7 @@ import Gallery from './screens/Gallery/Gallery';
 import AboutScreen from './screens/AboutScreen/AboutScreen';
 import ContactScreen from './screens/ContactScreen/ContactScreen';
 import WhatsImage from './assets/whatsapp.png';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [post, setPost] = useState([])
@@ -47,6 +48,7 @@ const App = () => {
         <WhatsText>Fale Conosco</WhatsText>
         <WhatsIcon src={WhatsImage} />
       </WhatsContainer>
+      <Footer />
     </AppContainer>
   );
 }

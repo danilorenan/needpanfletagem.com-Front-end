@@ -20,15 +20,18 @@ export const WhatsContainer = styled.div`
 `
 export const WhatsText = styled.div`
     background-color: var(--dark);
-    height: 1.5rem;
+    height: 2rem;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 6rem;
+    width: 7rem;
     padding: 0.2rem;
     border-radius: 4px;
     cursor: pointer;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
 `
 export const WhatsIcon = styled.img`
     width: 3rem;
