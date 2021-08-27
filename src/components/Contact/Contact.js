@@ -62,7 +62,7 @@ const Contact = () => {
                     <span>Blumenau - Santa Catarina</span>
                     <WhatsCallContainer>
                         <WhatsImage src={WhatsLogo} />
-                        <WhatsText>Chame agora</WhatsText>
+                        <a href='https://wa.me/5547984883371'><WhatsText>Chame agora</WhatsText></a>
                     </WhatsCallContainer>
                 </ContainerWhatsContact>
                 <ContainerEmailContact onSubmit={sendEmail} className={classes.root}>

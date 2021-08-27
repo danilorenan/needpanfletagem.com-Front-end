@@ -1,6 +1,6 @@
-import Image1 from '../assets/WeekImages/W1.jpg';
-import Image2 from '../assets/WeekImages/W2.jpg';
-import Image3 from '../assets/WeekImages/W3.png';
+import Image1 from '../assets/WeekImages/panfletagem.jpg';
+import Image2 from '../assets/WeekImages/panfletagem2.jpg';
+import Image3 from '../assets/WeekImages/panfletagem3.jpg';
 
 const WeekImage = [
     {

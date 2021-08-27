@@ -45,8 +45,8 @@ const App = () => {
         </Route>
       </Switch>
       <WhatsContainer>
-        <WhatsText>Fale Conosco</WhatsText>
-        <WhatsIcon src={WhatsImage} />
+        <a href='https://wa.me/5547984883371'><WhatsText>Fale Conosco</WhatsText></a>
+        <a href='https://wa.me/5547984883371'><WhatsIcon src={WhatsImage} /></a>
       </WhatsContainer>
       <Footer />
     </AppContainer>

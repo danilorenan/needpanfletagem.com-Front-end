@@ -17,6 +17,10 @@ export const WhatsContainer = styled.div`
     right: 0;
     bottom: 0;
     margin: 1rem;
+
+    a{
+        text-decoration: none;
+    }
 `
 export const WhatsText = styled.div`
     background-color: var(--dark);

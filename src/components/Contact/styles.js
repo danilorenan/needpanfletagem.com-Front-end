@@ -41,6 +41,10 @@ export const WhatsCallContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 `
 export const WhatsImage = styled.img`
     height: 3rem;

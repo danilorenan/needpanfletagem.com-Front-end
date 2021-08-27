@@ -1,10 +1,12 @@
 import React from 'react'
+import { ContactContainer } from './styles';
+import Contact from '../../components/Contact/Contact';
 
 const ContactScreen = () => {
     return (
-        <div>
-            ContactScreen
-        </div>
+        <ContactContainer>
+            <Contact />
+        </ContactContainer>
     )
 }
 
