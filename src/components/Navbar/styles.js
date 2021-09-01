@@ -36,33 +36,44 @@ export const Menu = styled.div`
         align-items: center;
         width: 4rem;
         color: #fff;
+        border: none;
     }
 
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-
-    }
     li {
-        margin: 1rem;
+        margin: 0rem 1rem 0rem 1rem;
         color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-     a { 
-        text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-        transition: text-decoration-color 300ms;
+
+    a { 
+        text-decoration: none;
+        position: relative;
         font-size: 1.2rem;
         cursor: pointer;
-        width: auto;
-        :hover {
-            text-decoration-color: rgba(255, 255, 255, 1);
+        
+        .link-style {
+            :after{
+            height: 0;
+            display: block;
+            content: '';
+            border-bottom: solid 3px #fff;  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+            transform-origin:100% 50%
+        }
+        :hover:after {
+            transform: scaleX(1);
+            transform-origin:0 50%;
+        }
         }
     }
 `
 export const InstaIcon = styled(InstagramIcon)`
     cursor: pointer;
     color: #fff;
+    border: none;
      
     :hover {
         color: var(--grey);

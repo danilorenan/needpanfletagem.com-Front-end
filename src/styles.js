@@ -17,8 +17,34 @@ export const WhatsContainer = styled.div`
     right: 0;
     bottom: 0;
     margin: 1rem;
+    animation: pulse 1s ease-in 3s;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
 
-    a{
+    @keyframes pulse {
+        0% {
+        }
+
+        5%,25% {
+            transform: rotate(2deg);
+            transform: rotate(4deg);
+            transform: rotate(6deg);
+            
+        }
+
+        15%,35% {
+            transform: rotate(-2deg);
+            transform: rotate(-4deg);
+            transform: rotate(-6deg);
+        }
+
+        40% {
+            transform: none;
+        }
+    }
+    a {
         text-decoration: none;
     }
 `

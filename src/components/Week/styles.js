@@ -9,7 +9,6 @@ export const WeekContainer = styled.div`
     background-color: var(--primary);
 
     .center {
-        background-color: red;
         width: 35rem;
         height: 25rem;
         display: flex;

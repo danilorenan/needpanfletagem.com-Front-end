@@ -10,13 +10,14 @@ import ContactScreen from './screens/ContactScreen/ContactScreen';
 import WhatsImage from './assets/whatsapp.png';
 import Footer from './components/Footer/Footer';
 
+
 const App = () => {
   const [post, setPost] = useState([])
 
     useEffect(() => {
         const getPosts = async () => {
             try {
-                const res = await axios.get('instagram');
+                const res = await axios.get('posts');
                 console.log(res)
                 setPost(res.data)
             } catch(err) {
@@ -32,10 +33,10 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path='/' exact>
-          <Home post={post}/>        
+          <Home />        
         </Route>
         <Route path='/Galeria' >
-          <Gallery />
+          <Gallery post={post}/>
         </Route>
         <Route path='/Sobre'>
           <AboutScreen />

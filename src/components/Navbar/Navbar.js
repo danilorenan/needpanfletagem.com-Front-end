@@ -20,22 +20,22 @@ const Navbar = () => {
                 <Menu>
                     <Link style={{listStyle: 'none'}} to='/'>
                         <li>
-                            Home
+                            <a className='link-style'>Home</a>
                         </li>
                     </Link>
                     <Link style={{listStyle: 'none'}} to='/Sobre'>
                         <li>
-                            Sobre Nós
+                            <a className='link-style'>Sobre nós</a>
                         </li>
                     </Link>
                     <Link style={{listStyle: 'none'}} to='/Galeria'>
                         <li>
-                            Galeria
+                            <a className='link-style'>Galeria</a>
                         </li>
                     </Link>
                     <Link style={{listStyle: 'none'}} to='/Contato'>
                         <li>
-                            Contato
+                            <a className='link-style'>Contato</a>
                         </li>
                     </Link> 
                     <div className='icons-container'>
