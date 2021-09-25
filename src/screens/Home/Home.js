@@ -5,13 +5,13 @@ import Week from '../../components/Week/Week';
 import Contact from '../../components/Contact/Contact';
 import WeekImage from '../../api/WeekImages';
 
-const Home = () => {
+const Home = ({ weekPost }) => {
     return (
         <HomeContainer>
             <DestaqueContainer>
                 <DestaqueImage src={ImageDestaque}/>
             </DestaqueContainer>
-            <Week WeekImage={WeekImage}/>
+            <Week weekPost={weekPost} WeekImage={WeekImage}/>
             <Contact />
         </HomeContainer>
     )

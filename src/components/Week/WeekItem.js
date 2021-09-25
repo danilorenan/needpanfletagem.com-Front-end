@@ -5,7 +5,7 @@ const WeekItem = ({item}) => {
     console.log(item)
     return (
         <WeekItemContainer>
-             <WeekItemImage src={item.image} />
+             <WeekItemImage src={item.url} />
         </WeekItemContainer>
     )
 }

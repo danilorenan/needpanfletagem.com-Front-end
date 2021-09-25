@@ -8,18 +8,43 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     align-items: center;
     color: #fff;
+
+    @media (max-width: 825px){
+        height: 50rem;
+    }
 `
 export const ContactTitle = styled.h1`
     color: #fff;
     margin: 1rem;
+    
+    @media (max-width: 511px){
+        font-size: 1.5rem;
+    }
+    @media (max-width: 385px){
+        font-size: 1rem;
+    }
 `
 export const ContactInfosContainer = styled.div`
     display: flex;
     flex-direction: row;
     height: 30rem;
     width: 50rem;
-    border: 5px double var(--primary) ;
+    border: 5px double var(--primary);
     padding: 2rem 0 2rem 0;
+
+    @media (max-width: 825px){
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+        height: 40rem;
+    }
+    @media (max-width: 511px){
+        width: 25rem;
+        height: 40rem;
+    }
+    @media (max-width: 429px){
+        width: 19rem;
+    }
 `
 export const ContainerWhatsContact = styled.div`
     width: 25rem;
@@ -28,12 +53,32 @@ export const ContainerWhatsContact = styled.div`
     align-items: center;
     justify-content: center;
     border-right: 2px solid var(--primary);
+
+    @media (max-width: 825px){
+        border-bottom: 2px solid var(--primary);
+        border-right: none;
+    }
+    
+    @media (max-width: 511px){
+        width: 20rem;
+    }
+
+    @media (max-width: 511px){
+        width: 15rem;
+    }
+    
     h2 {
         margin: 0.5rem;
+        @media (max-width: 511px){
+        font-size: 1rem;
+        }
     }
 
     span {
         margin: 0.2rem;
+        @media (max-width: 511px){
+        font-size: 0.8rem;
+        }
     }
 `
 export const WhatsCallContainer = styled.div`
@@ -72,6 +117,10 @@ export const ContainerEmailContact = styled.form`
     width: 25rem;
     height: 30rem;
     padding: 2rem;
+
+    @media (max-width: 511px){
+        width: 19rem;
+    }
 `
 export const NameTextField = styled(TextField)`
     color: #fff;

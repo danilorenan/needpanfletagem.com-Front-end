@@ -10,6 +10,10 @@ export const GalleryTitle = styled.h1`
     color: #fff;
     margin: 2rem;
     text-align: center;
+
+    @media (max-width: 413px){
+        font-size: 1.5rem;
+    }
 `
 export const GalleryGrid = styled.div`
     display: grid;
@@ -17,6 +21,12 @@ export const GalleryGrid = styled.div`
     grid-gap: 1rem;
     border: 5px double var(--primary);
     padding: 1rem;
+
+    @media (max-width: 413px){
+        display: flex;
+        flex-direction: column;
+        
+    }
 `
 export const GalleryItemContainer = styled.div`
     width: 100%;
@@ -33,6 +43,10 @@ export const GalleryImage = styled.img`
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (max-width: 413px){
+        top: 30;
+    }
 `
 export const ModalContainer = styled.div`
     position: fixed;

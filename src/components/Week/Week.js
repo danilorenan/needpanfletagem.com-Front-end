@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import WeekItem from './WeekItem';
 import { Link } from 'react-router-dom';
 
-const Week = ({WeekImage}) => {
+const Week = ({weekPost, WeekImage}) => {
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -21,7 +21,7 @@ const Week = ({WeekImage}) => {
       }
 
     const settings = {
-        dots: true,
+        dots: false,
         fade: true,
         autoplay: true,
         width: 600,
@@ -39,7 +39,7 @@ const Week = ({WeekImage}) => {
             <WeekTitle><span style={{textDecoration: 'underline'}}>D</span>estaque semanal</WeekTitle>
             <Slider {...settings}>
                 
-                    {WeekImage?.map(item => {
+                    {weekPost?.map(item => {
                         return <WeekItem item={item} key={item.id} />
                     })}
                
